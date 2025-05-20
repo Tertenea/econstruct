@@ -1,0 +1,61 @@
+URVAL AV REFERENSUPPDRAG FRÅN KODUMAJA
+
+Mölnbovägen 23, Järna, Sverige
+ 
+•	Lastnedräkning
+•	Hållfasthet och stabilitet beräkningar
+•	Utförde hållfasthet beräkningar för transport av moduler.
+•	Beräkningar för gummiklossar som användes mot oväsen.
+
+ 
+Bergbakken 8, Sande i Vestfold, Norge    
+•	Lastnedräkning
+•	Hållfasthet och stabilitet beräkningar
+•	Utförde hållfasthet beräkningar för transport av moduler.
+•	Beräkningar för gummiklossar som användes mot oväsen.
+•	Träkonstruktion byggnaden med en höjd upp till 6 våningar
+ 
+URVAL AV REFERENSUPPDRAG FRÅN PE TEKNIK OCH ARKITEKTUR
+Kista Square garden 
+Befintlig:
+ 
+Nybyggnad:
+  
+•	Modellerade befintligt stomme i 3D program
+•	Lastnedräkning
+•	Hållfasthet och stabilitet beräkningar
+o	Avväxlings balkar mellan befintlig och tillbyggnad
+o	Förstärkte befintliga konstruktioner.
+o	Tillbyggnad i innergården.
+
+ 
+Stettin 6, Stockholm
+Träbogar med 24 meters spännvidd
+ 
+•	Kontrollerade träbogarnas bärighet 
+ 
+Fläktaggeragat stativ på taket 
+ 
+•	Hållfasthet och stabilitet beräkningar
+•	Beräkningar för gummiklossar som användes mot oväsen.
+•	Montage detaljritningar
+•	Tillverkningsritningar för stålstomme
+ 
+Hantverkaren 2
+ 
+ 
+•	Håldäck hålfasthets beräkningar 
+•	Håldäck, ytterväggar, innerväggar modellering
+•	Tillverkningsritningar
+Sälgen 2
+ Ändringar i befintlig stomme.
+•	Lastnedräkning
+•	Hållfasthetsberäkningar
+o	Lastnedräkning
+o	Befintlig somme hållfasthets kontroll beräkningar
+o	Nya stålkonstruktionens hållfasthets beräkningar
+•	Ritningar
+o	Rivningsritingar
+o	Stålkonstruktionens montagedetaljer
+o	Stålkonstruktion tillverkningsritningar
+
