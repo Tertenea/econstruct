@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Define types for our data structure
 interface ReferenceProject {
   id: number;
   title: string;
@@ -11,7 +10,6 @@ interface ReferenceProject {
   company: 'KODUMAJA' | 'PE' | 'IND';
 }
 
-// Define props for the ImageGallery component
 interface ImageGalleryProps {
   images: string[];
   currentIndex: number;
@@ -21,7 +19,6 @@ interface ImageGalleryProps {
   onPrev: () => void;
 }
 
-// Reference project data from referenser.txt
 const referenceProjects: ReferenceProject[] = [
   {
     id: 1,
@@ -136,7 +133,6 @@ const referenceProjects: ReferenceProject[] = [
   }
 ];
 
-// Image Gallery Modal component
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images, currentIndex, title, onClose, onNext, onPrev }) => {
   if (images.length === 0) return null;
   
@@ -179,13 +175,13 @@ const References: React.FC = () => {
     setCurrentProject(project);
     setCurrentImageIndex(imageIndex);
     setModalOpen(true);
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    document.body.style.overflow = 'hidden';
   };
   
   const closeModal = () => {
     setModalOpen(false);
     setCurrentProject(null);
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto';
   };
   
   const nextImage = () => {
@@ -200,7 +196,6 @@ const References: React.FC = () => {
     }
   };
 
-  // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!modalOpen) return;
@@ -231,7 +226,6 @@ const References: React.FC = () => {
         <div className="references-intro">
         </div>
         
-        {/* KODUMAJA Projects */}
         <div className="references-section">
           <h2 className="reference-section-title">URVAL AV REFERENSUPPDRAG FRÅN KODUMAJA</h2>
           <p className="project-description">
@@ -291,7 +285,6 @@ const References: React.FC = () => {
           </div>
         </div>
 
-        {/* PE Projects */}
         <div className="references-section">
           <h2 className="reference-section-title">URVAL AV REFERENSUPPDRAG FRÅN PE TEKNIK OCH ARKITEKTUR</h2>
           <p className="project-description">
@@ -351,7 +344,6 @@ const References: React.FC = () => {
           </div>
         </div>
         
-        {/* IND Projects */}
         <div className="references-section">
           <h2 className="reference-section-title">URVAL AV REFERENSUPPDRAG UTFÖRT SJÄLVGÅENDE I SVERIGE</h2>
           <div className="references-grid">
@@ -411,11 +403,10 @@ const References: React.FC = () => {
         <div className="references-contact">
           <h3>Vill du veta mer om våra projekt?</h3>
           <p>Kontakta oss för mer information eller för att diskutera ditt eget projekt.</p>
-          <a href="/contact" className="contact-button">Kontakta oss</a>
+          <a href="/kontakt" className="contact-button">Kontakta oss</a>
         </div>
       </div>
       
-      {/* Modal Image Gallery */}
       {modalOpen && currentProject && (
         <ImageGallery 
           images={currentProject.images} 

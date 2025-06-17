@@ -56,7 +56,6 @@
   color: #3498db;
 }
 
-/* Burger menu button */
 .burger-menu {
   display: none;
   flex-direction: column;
@@ -80,7 +79,6 @@
   transform-origin: center;
 }
 
-/* Burger menu animation */
 .burger-menu.open span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -93,7 +91,6 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Navigation menu */
 .nav-menu {
   display: flex;
   gap: 2rem;
@@ -113,12 +110,10 @@
   color: #3498db;
 }
 
-/* Menu overlay for mobile */
 .menu-overlay {
   display: none;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
   .burger-menu {
     display: flex;
@@ -162,7 +157,6 @@
   }
 }
 
-/* Tablet styles */
 @media (max-width: 1024px) and (min-width: 769px) {
   .header-content {
     padding: 0 1rem;
@@ -211,6 +205,13 @@ main {
   margin-top: 2rem;
 }
 
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 .contact-card {
   background: #f8f9fa;
   border-radius: 8px;
@@ -220,16 +221,18 @@ main {
 
 .contact-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 1.5rem;
 }
 
 .contact-image {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 1.5rem;
+  margin-bottom: 1rem;
   flex-shrink: 0;
 }
 
@@ -253,6 +256,25 @@ main {
   color: #666;
   margin: 0.5rem 0;
   line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .contacts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  .contact-content {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .contact-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
 }
 
 .services-grid {
@@ -337,12 +359,10 @@ main {
   left: 0;
 }
 
-/* Add new styles for the 2x2 grid */
 .services-grid > .service-card:not(.featured-service) {
   flex: 1;
 }
 
-/* Company section with video and message */
 .company-section {
   display: flex;
   flex-direction: row;
@@ -391,7 +411,6 @@ main {
   }
 }
 
-/* New styles for section dividers and visual separation */
 .section-divider {
   margin: 4rem 0 2rem;
   text-align: center;
@@ -428,6 +447,9 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .company-section {
@@ -437,15 +459,13 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 40px; /* Increased from 80px to scroll further down */
+  scroll-padding-top: 40px;
 }
 
-/* Style for the services section anchor */
 #tjanster {
-  scroll-margin-top: 40px; /* Increased from 80px to scroll further down */
+  scroll-margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -454,7 +474,6 @@ html {
   }
 }
 
-/* About page styles */
 .about-container {
   max-width: 900px;
   margin: 0 auto;
@@ -583,131 +602,6 @@ html {
   }
 }
 
-/* Contact Form Styles */
-.contact-form-container {
-  max-width: 800px;
-  margin: 3rem auto 0;
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.form-title {
-  color: #2c3e50;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.8rem;
-}
-
-.form-title:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #2ecc71;
-}
-
-.form-status {
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 4px;
-  font-weight: 500;
-}
-
-.form-status.success {
-  background-color: rgba(46, 204, 113, 0.2);
-  color: #27ae60;
-  border: 1px solid #2ecc71;
-}
-
-.form-status.error {
-  background-color: rgba(231, 76, 60, 0.2);
-  color: #c0392b;
-  border: 1px solid #e74c3c;
-}
-
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group:nth-child(4) {
-  grid-column: span 2;
-}
-
-.form-group label {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-family: inherit;
-  transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-}
-
-.submit-button {
-  grid-column: span 2;
-  padding: 0.8rem 1.5rem;
-  background-color: #2ecc71;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 1rem;
-}
-
-.submit-button:hover {
-  background-color: #27ae60;
-}
-
-.form-note {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-  
-  .form-group:nth-child(4) {
-    grid-column: span 1;
-  }
-  
-  .submit-button {
-    grid-column: span 1;
-  }
-}
-
-/* References page styles */
 .references-intro {
   max-width: 800px;
   margin: 0 auto 3rem;
@@ -860,7 +754,6 @@ html {
   cursor: pointer;
 }
 
-/* Modal Image Gallery Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1011,10 +904,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  /* Remove the two-column layout for references */
-  /*.references-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }*/
 }
 
 @media (min-width: 1024px) {

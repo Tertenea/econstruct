@@ -66,7 +66,7 @@ const Home: React.FC = () => {
             <div className="service-card">
               <h3>TILLBYGGNADER</h3>
               <p>
-                Har ni en byggnad som ni vill bygga om? Vi försöker utnyttja så mycket av den befintliga konstruktionen som det går.
+                Har ni en eller flera byggnader som ni vill bygga ut? Vi erbjuder nya lösningar där befintlig och ny konstruktion samarbetar.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
         <div className="references-contact">
           <h3>Redo att påbörja ditt byggprojekt?</h3>
           <p>Kontakta oss för en konsultation och låt oss diskutera hur vi kan hjälpa dig med ditt kommande byggprojekt.</p>
-          <a href="/contact" className="contact-button">Kontakta oss</a>
+          <a href="/kontakt" className="contact-button">Kontakta oss</a>
         </div>
       </div>
     </div>
